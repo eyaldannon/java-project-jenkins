@@ -1,6 +1,7 @@
 pipeline {
   environment {
-  MAJOR_VERSION = "8"
+    MAJOR_VERSION = "8"
+    MAJOR_GIT_VERSION = "1"
   }
   agent any
   stages {
@@ -20,7 +21,7 @@ pipeline {
       #  branch 'master'
       #}
       steps {
-        sh 'echo bla'
+        sh "if [ -d "/var/log/messages" ]; then echo bla;fi"
       } 
     }
   }
