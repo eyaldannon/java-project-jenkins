@@ -16,10 +16,10 @@ pipeline {
       }
     }
     stage('echo something'){
-      # Use with multiple branch project
-      #when {
-      #  branch 'master'
-      #}
+      // Use with multiple branch project
+      // when {
+      //  branch 'master'
+      // }
       steps {
         sh "if [ -d '/var/log/messages' ]; then echo bla;fi"
       } 
