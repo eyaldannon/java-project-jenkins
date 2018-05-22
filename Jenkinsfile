@@ -1,4 +1,7 @@
 pipeline {
+  environment {
+  MAJOR_VERSION = "8"
+  }
   agent any
   stages {
     stage('build'){
