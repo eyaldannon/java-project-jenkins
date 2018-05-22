@@ -21,7 +21,7 @@ pipeline {
       #  branch 'master'
       #}
       steps {
-        sh "if [ -d "/var/log/messages" ]; then echo bla;fi"
+        sh "if [ -d '/var/log/messages' ]; then echo bla;fi"
       } 
     }
   }
