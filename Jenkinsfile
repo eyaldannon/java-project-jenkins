@@ -5,6 +5,12 @@ pipeline {
   }
   agent any
   stages {
+    stage('say hellp'){
+      agent any
+      steps{
+        sayHello 'Student'
+      }
+    }
     stage('build'){
       steps {
         sh 'ant -f build.xml -v'
