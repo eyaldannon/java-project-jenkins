@@ -11,7 +11,7 @@ pipeline {
         }
       }
     }
-    stage{'echo something'}{
+    stage('echo something'){
       steps {
         sh 'echo bla'
       } 
