@@ -15,6 +15,9 @@ pipeline {
       }
     }
     stage('echo something'){
+      when {
+        branch 'master'
+      }
       steps {
         sh 'echo bla'
       } 
