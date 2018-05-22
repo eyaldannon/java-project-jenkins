@@ -15,9 +15,10 @@ pipeline {
       }
     }
     stage('echo something'){
-      when {
-        branch 'master'
-      }
+      # Use with multiple branch project
+      #when {
+      #  branch 'master'
+      #}
       steps {
         sh 'echo bla'
       } 
